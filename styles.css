@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+}
+
+.screen_container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.background_img {
+  width: 100%;
+}
+
+.content_container {
+  background-color: white;
+  width: 30vw;
+  height: auto;
+  position: absolute;
+  align-self: center;
+  border-radius: 20px;
+  text-overflow: wrap;
+}
+
+.dancing_lady_img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.heading {
+  padding-top: 3vh;
+  padding-bottom: 1.5vh;
+  font-size: 1.8vw;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.description {
+  font-size: 1.1vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  color: rgba(61, 61, 63, 0.6);
+}
+
+.annual_plan_button {
+  width: 80%;
+
+  margin-left: 10%;
+  margin-top: 5%;
+  padding: 8%;
+  border-radius: 10px;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+}
+
+.music_img {
+  float: left;
+  padding-right: 8%;
+  width: 5.3vw;
+  align-self: center;
+}
+
+.annual_plan_text {
+  font-size: 1.1vw;
+  line-height: 160%;
+}
+
+#annual_span_1 {
+  font-weight: 900;
+  font-size: 97%;
+}
+
+#annual_span_2 {
+  color: rgba(61, 61, 63, 0.6);
+}
+
+.change_link {
+  color: hsl(245, 75%, 52%);
+  font-size: 1.1vw;
+  font-weight: 700;
+  float: right;
+  align-self: center;
+  margin-left: 20%;
+}
+
+.change_link:hover {
+  transform: scale(1.05);
+}
+
+.payment_button {
+  width: 80%;
+  height: 5.5vh;
+  margin-top: 7%;
+  margin-left: 10%;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.payment_button:hover {
+  transform: scale(1.05);
+}
+
+.payment_txt {
+  display: flex;
+  align-self: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1vw;
+}
+
+.cancel_order_container {
+  margin-top: 7%;
+  margin-bottom: 8%;
+}
+
+.cancel_order_link {
+  text-decoration: none;
+  color: rgba(61, 61, 63, 0.6);
+  font-size: 1.1vw;
+  font-weight: 800;
+}
+
+.cancel_order_container:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 414px) {
+  .background_img {
+    display: none;
+  }
+
+  .content_container {
+    width: 85vw;
+  }
+
+  .heading {
+    font-size: 5vw;
+  }
+
+  .description {
+    font-size: 3.8vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+
+  .music_img {
+    width: 15vw;
+  }
+
+  .annual_plan_text {
+    font-size: 3.5vw;
+  }
+
+  .change_link {
+    font-size: 3.5vw;
+  }
+
+  .payment_txt {
+    font-size: 3.5vw;
+  }
+
+  .cancel_order_link {
+    font-size: 3.5vw;
+  }
+}
